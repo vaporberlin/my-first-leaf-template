@@ -3,7 +3,5 @@
     <head>
         <title>Leaf</title>
     </head>
-    <body>
-        <h1> You rule #(name)! </h1>
-    </body>
+    <body> <h1> Welcome to my first leaf template! </h1> </body>
 </html>

@@ -1,28 +1,18 @@
 // swift-tools-version:4.0
-
 import PackageDescription
 
 let package = Package(
-  name: "my-first-leaf-template",
-  products: [
-    .library(name: "App", targets: ["App"]),
-    .executable(name: "Run", targets: ["Run"])
-  ],
-  dependencies: [
-    .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.1.0")),
-    .package(url: "https://github.com/vapor/leaf-provider.git", .upToNextMajor(from: "1.1.0"))
-  ],
-  targets: [
-    .target(name: "App", dependencies: ["Vapor", "LeafProvider"],
-      exclude: [
-        "Config",
-        "Public",
-        "Resources",
-      ]
-    ),
-    .target(name: "Run", dependencies: ["App"]),
-    .testTarget(name: "AppTests", dependencies: ["App", "Testing"])
-  ]
+    name: "my-first-leaf-template",
+    dependencies: [
+        // 💧 A server-side Swift web framework.
+        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0-rc"),
+        .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0-rc")
+    ],
+    targets: [
+        .target(name: "App", dependencies: ["Vapor", "Leaf"]),
+        .target(name: "Run", dependencies: ["App"]),
+        .testTarget(name: "AppTests", dependencies: ["App"]),
+    ]
 )
 
 
