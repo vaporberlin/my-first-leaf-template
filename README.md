@@ -1,9 +1,9 @@
 <p align="center">
-  <h2>My First Route 👨🏼‍💻 </h2>
+  <h2>My First Leaf Template 👨🏼‍💻 </h2>
   <h3>Tutorial to build this project</h3>
-  <h4><a href="https://medium.com/@martinlasek/tutorial-how-to-set-up-a-vapor-3-project-75466394cf2e" target="_blank">How to set up a Vapor 3 project</a></h4>
+  <h4><a href="https://medium.com/@martinlasek/tutorial-how-to-use-leaf-70d796831ec5" target="_blank">How to use Leaf</a></h4>
   <br>
-  <img width="100%" src="my-first-route.png" alt="screenshot">
+  <img width="100%" src="my-first-leaf-template.png" alt="screenshot">
 </p>
 
 ## Community 🚀
