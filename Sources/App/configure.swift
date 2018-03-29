@@ -16,4 +16,6 @@ public func configure(
     services.register(myService)
 
     try services.register(LeafProvider())
+
+    config.prefer(LeafRenderer.self, for: TemplateRenderer.self)
 }

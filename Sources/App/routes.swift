@@ -21,15 +21,13 @@ public func routes(_ router: Router) throws {
 
     // return a leaf template
     router.get("view") { req -> Future<View> in
-        let leaf = try req.make(LeafRenderer.self)
-        return leaf.render("welcome")
+        return try req.view().render("welcome")
     }
 
     // return a leaf template with data
     router.get("bonus") { req -> Future<View> in
-        let leaf = try req.make(LeafRenderer.self)
         let developer = Person(name: "Martin", age: 26)
-        return leaf.render("whoami", developer)
+        return try req.view().render("whoami", developer)
     }
 }
 
